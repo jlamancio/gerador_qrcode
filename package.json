@@ -1,0 +1,13 @@
+{
+  "name": "gerador_qrcode",
+  "version": "1.0.0",
+  "description": "Gerador de QR Code e Passwords",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --watchb src/index.js"
+  },
+  "keywords": [],
+  "author": "Amancio",
+  "license": "ISC",
+  "type": "module"
+}
