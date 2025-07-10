@@ -1,7 +1,7 @@
 import qr from "qrcode-terminal";
 import chalk from "chalk";
 
-async function handler(err, result) {
+async function handlerQc(err, result) {
     if (err) {
         console.log(chalk.bgRedBright.bold('Error on application'));
         return;
@@ -14,4 +14,4 @@ async function handler(err, result) {
     
 }
 
-export default handler;
+export default handlerQc;

@@ -4,7 +4,7 @@
   "description": "Gerador de QR Code e Passwords",
   "main": "index.js",
   "scripts": {
-    "start": "node --watch 2src/index.js"
+    "start": "node --env-file=.env --watch 2src/index.js"
   },
   "keywords": [],
   "author": "Amancio",
