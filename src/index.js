@@ -1,6 +1,6 @@
 import prompt from "prompt";
 import dotenv from "dotenv/config";
-import mainPrompt from "./prompts/prompt.main.js";
+import mainPrompt from "./prompts-schema/prompt-schema-main.js";
 import createQrCode from "./services/qrcode/createQrCode.js";
 import createPassword from "./services/password/createPsw.js";
 import chalk from "chalk";
