@@ -1,3 +1,4 @@
+import chalk from "chalk";
 
 async function permittedCharacters() {
     let permited = [];
@@ -15,25 +16,25 @@ async function permittedCharacters() {
     }
 
     if(process.env.SPECIAL_CHARACTERS === 'true') {
-      permited.push(...'!@#$%^&*()-_'); 
+      permited.push(...'!@#$%^&*()-_');
     }
-
+   
     return permited;
 }
-
 
 async function handlerPsw(){
     let characters = [];
     let password = '';
-    const passwordLength = process.env.PASSWORD_LENGTH;
-
+    const passwordLength = parseInt(process.env.PASSWORD_LENGTH, 10);
     characters = await permittedCharacters();
 
     for(let i = 0; i < passwordLength; i++) {
         const index = Math.floor(Math.random() * characters.length);
         password += characters[index];
-
     }
+  
+    return password;
+
 }
- 
+
 export default handlerPsw;

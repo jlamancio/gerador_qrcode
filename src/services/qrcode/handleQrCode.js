@@ -8,7 +8,7 @@ async function handlerQc(err, result) {
     }
     const isSmall = result.type == 2;
     qr.generate(result.link, { small: isSmall }, (qrCode) => {
-        console.log(chalk.greenBright('QRCode gerado com sucesso!\n'));
+        console.log(chalk.greenBright('QRCode created!\n'));
         console.log(qrCode);
     });
     
